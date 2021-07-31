@@ -2,8 +2,8 @@
 
 one:
   username: MyString
-  password: MyString
+  password_digest: $2a$12$mJyffAUWO5wNN5xTGdO3RO7OscnblryEAK.9j8WHo/EtFrFW9t8fy
 
 two:
-  username: MyString
-  password: MyString
+  username: Boss
+  password_digest: MyString
