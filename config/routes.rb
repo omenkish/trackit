@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :users, path: '/register', only: [:create]
+      resources :entries, only: [:index, :create, :update]
     end
   end
   controller :sessions do
