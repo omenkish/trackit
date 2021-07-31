@@ -1,7 +1,5 @@
 # README
 
-# README
-
 # Time Tracker App
 
 Trackit is a simple application for tracking users clock in and clock out
