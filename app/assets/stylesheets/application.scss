@@ -1,0 +1,108 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+.bg_primary-color {
+  background-color: #FFFFFF;
+}
+.primary-color {
+  background-color: #FFFFFF;
+}
+.bg_secondary-color {
+  background-color: #293241;
+}
+.secondary-color {
+  color: #293241;
+}
+.custom-button.btn {
+  background-color: #293241;
+  color: #FFF;
+  border: none;
+}
+.custom-button.btn:hover {
+  color: #FFF !important;
+  border: none;
+}
+.hero {
+  width: 100vw;
+  height: 50vh;
+}
+.hero img {
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+  width: 100%;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 15%;
+}
+
+.font-weight-bold {
+  text-decoration: none;
+}
+
+.incorrect-feedback {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: .875em;
+  color: #dc3545;
+}
+
+.modal-form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 15%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.entries-table {
+  table-layout: fixed;
+}
+
+.entries-table tr td{
+  width: 20%;
+}
+
+
+.time-input {
+  cursor: default;
+  margin: 2px;
+  padding: 2px;
+  color: #333;
+  text-align: center;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  width: 5rem;
+  height: 1.6rem;
+  font-family: "Roboto";
+  font-size: 100%;
+  transition: 150ms all;
+}
+
+.time-input:hover {
+  border: 1px solid #333;
+}
+
+.time-input:focus {
+  border: 1px solid #f03;
+}
+
