@@ -32,6 +32,14 @@ const Entries = () => {
   const [nextEntry, setNextEntry] = useState(entryValueKeyMaps.clock_in);
 
   useEffect(() => {
+    const user = localStorage.getItem('user');
+    if (!user) {
+      history.push('/');
+      return;
+    }
+  }, []);
+  
+  useEffect(() => {
     if (entries.length) {
       const lastEntry = first(entries);
       const isLastClockedIn = lastEntry?.entry_type === entryValueKeyMaps.clock_in;
@@ -46,12 +54,6 @@ const Entries = () => {
 
   useEffect(
     () => {
-
-      const user = localStorage.getItem('user');
-      if (!user) {
-        history.push('/');
-        return;
-      }
       setIsLoadingEntries(true);
 
       getRequest('/api/v1/entries')
